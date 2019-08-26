@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UMS</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/sidenav.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="nav">
+    <ul class="main_right">
+
+        <li>
+            <button class="settings_nav"></button>
+        </li>
+            <li class="login_li">
+                    <button class="login_btn"></button>
+                </li>
+
+               
+<li class="avatar_li">
+
+    <img class="avatar" src="./media/img/avatar.jpg"/>
+
+</li>
+
+<li class="welcome_text">
+
+    Welcome
+
+    <div class="subtext">steve@apple.com</div>
+</li>
+
+    </ul>
+    
+    </div>
+
+    <div class="split left">
+    <div id="side_nav_container">
+     <ul class="side_ul">
+         <div class="side_nav_c"></div>
+         <li><i class="fa fa-home"></i><div class="nav_text">Home</div></li>
+         <li>2</li>
+         <li>3</li>
+         <li>4</li>
+         <li>5</li>
+         <li>6</li>
+         <li>7</li>
+         <li>8</li>
+     </ul>
+    </div>
+</div>
+
+<div class="split right">
+        <div class="centered">Content goes here</div>
+</div>
+    
+    <script>
+    $("#side_nav_container").hover(function(){
+        console.log("done");
+        $(".nav_text").fadeToggle( "Fast", "linear" );
+        var toggleWidth = $("#side_nav_container").width() == 200 ? "50px" : "200px";
+        $('#side_nav_container').animate({ width: toggleWidth });
+      });
+
+
+    </script>
+</body>
+</html>
