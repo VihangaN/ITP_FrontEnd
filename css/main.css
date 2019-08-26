@@ -77,6 +77,30 @@ margin-right:20px;
 font-size:12px;
 }
 
+.main_right_auth{
+    float:right;
+    list-style: none;
+    margin-top:16px;
+    margin-right:40px;
+    display:none;
+
+}
+
+.login_btn_auth{
+    border-radius: 40px;
+    background: #487eb0;
+    width: 90px;
+    height: 30px;
+    border-style: none;
+    padding:5px;
+    margin-top:-10px;
+    margin-right:2px;
+    user-select: none;
+    outline:none;
+    color:#ffffff;
+    font-family:Roboto;
+}
+
 
 /* Main container */
 
