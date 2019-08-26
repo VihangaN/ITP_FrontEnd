@@ -36,7 +36,7 @@ margin-right:20px;
     margin-right: 30px;
 }
 
-.login_btn{
+.logout_btn{
     border-radius: 50%;
     background: #487eb0;
     width: 30px;
@@ -140,4 +140,78 @@ font-size:12px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+
+
+
+
+  /* logout confirm model box */
+
+  .logout_confirm{
+    z-index: 200;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width:400px;
+    height:250px;
+    background:#ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    display: none;
+  }
+
+ #confirm{
+      margin-top:25px;
+  }
+
+  .align_confirm{
+      margin-top:20px;
+      color:#487eb0;
+  }
+
+  #confirm_btns{
+     margin-top:20px;
+  }
+
+  .yes{
+    border-radius: 40px;
+    background: #487eb0;
+    width: 90px;
+    height: 30px;
+    border-style: none;
+    padding:5px;
+    margin-top:-10px;
+    margin-right:2px;
+    user-select: none;
+    outline:none;
+    color:#ffffff;
+    font-family:Roboto;
+    cursor: pointer;
+  }
+
+  .no{
+    border-radius: 40px;
+    background: #ee5253;
+    width: 90px;
+    height: 30px;
+    border-style: none;
+    padding:5px;
+    margin-top:-10px;
+    margin-right:2px;
+    user-select: none;
+    outline:none;
+    color:#ffffff;
+    font-family:Roboto;
+    cursor: pointer;
+  }
+
+  button{
+      opacity: 0.8;
+  }
+
+  button:hover{
+      opacity: 1;
   }

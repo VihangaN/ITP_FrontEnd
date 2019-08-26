@@ -26,7 +26,7 @@
             <button class="settings_nav"></button>
         </li>
             <li class="login_li">
-                    <button class="login_btn"></button>
+                    <button class="logout_btn"></button>
                 </li>
 
                
@@ -66,7 +66,17 @@
 <div class="split right">
         <div class="centered">Content goes here</div>
 </div>
-    
+    <div class="logout_confirm">
+            <i class="fa fa-question-circle fa-5x align_confirm"></i>
+        <div id="confirm">Are you sure , Do you want to logout ?</div>
+        <div id="confirm_btns">
+            <button id="yes" class="yes">YES</button>
+            <button id="no" class="no">NO</button>
+        </div>
+    </div>
+
+
+
     <script>
     $("#side_nav_container").hover(function(){
         console.log("done");
@@ -74,6 +84,18 @@
         var toggleWidth = $("#side_nav_container").width() == 200 ? "50px" : "200px";
         $('#side_nav_container').animate({ width: toggleWidth });
       });
+
+      $(".logout_btn").click(function(){
+        console.log("done");
+          $(".logout_confirm").fadeIn();
+          
+      })
+
+      $("#no").click(function(){
+        $(".logout_confirm").fadeOut();
+      })
+
+      
 
 
     </script>
