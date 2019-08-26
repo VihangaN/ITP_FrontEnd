@@ -9,12 +9,17 @@
 
 
 #nav{
-    width:100%;
+    width: 100%;
     height:50px;
     top:0;
+    /* margin-left: 10vw; */
+    /* border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px; */
     background:rgba(211, 211, 211, 0.384);
 }
-
+.main_right{
+    display:inline;
+}
 .main_right  li{
     float:right;
     list-style: none;
@@ -25,6 +30,7 @@
     border-radius: 50%;
     width:40px;
     margin-top:-12px;
+    margin-right: 10px;
 
 }
 
@@ -101,7 +107,12 @@ font-size:12px;
     font-family:Roboto;
 }
 
-
+.logo{
+    position: absolute;
+   margin: 20px;
+    margin-top: 7px;
+    width:90px;
+}
 /* Main container */
 
 #main{
@@ -210,6 +221,7 @@ font-size:12px;
 
   button{
       opacity: 0.8;
+      cursor: pointer;
   }
 
   button:hover{

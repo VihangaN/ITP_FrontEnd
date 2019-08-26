@@ -1,17 +1,19 @@
 #side_nav_container{
     height:80vh;
     width:50px;
-    background:#DDDDDD;
+    background:#ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     content:'';
     margin-left:20px;
-    margin-top:20px;
+    margin-top:45px;
     border-radius: 40px;
  
     
 }
 
-.side_nav_c{
+.side_nav_c {
 display: block;
+font-size:50px;
 }
 
 .side_ul .nav_text{
@@ -26,6 +28,11 @@ display: block;
     padding:20px;
     cursor: pointer;
     
+}
+
+.side_ul i{
+    font-size:30px;
+    margin-left: -9px;
 }
 
 #expand{
