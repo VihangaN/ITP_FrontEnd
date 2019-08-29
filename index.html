@@ -16,7 +16,7 @@
 </head>
 <body>
     <div id="nav">
-            <img  class="logo" src="./media/img/logo.svg" alt="">
+       
         <ul class="main_right_auth">
             <button class="login_btn_auth">Login</button>
         </ul>
@@ -55,15 +55,22 @@
     
     <div id="side_nav_container">
      <ul class="side_ul">
-         <div class="side_nav_c"></div>
-         <li><i class="fa fa-home"></i><div class="nav_text">Home</div></li>
-         <li>2</li>
-         <li>3</li>
+      
+         <li><img class="logo" src="./media/img/logo.svg" alt=""></li>
+         <div class="nav_ul">
+         <li>2
+         <ul class="sub">
+            <li>2.1</li>
+            <li>2.2</li>
+           
+         </ul>
+        </li>
          <li>4</li>
          <li>5</li>
          <li>6</li>
          <li>7</li>
          <li>8</li>
+        </div>
      </ul>
     </div>
 
@@ -83,12 +90,7 @@
 
 
     <script>
-    $("#side_nav_container").hover(function(){
-        console.log("done");
-        $(".nav_text").fadeToggle( "Fast", "linear" );
-        var toggleWidth = $("#side_nav_container").width() == 200 ? "50px" : "200px";
-        $('#side_nav_container').animate({ width: toggleWidth });
-      });
+    
 
       $(".logout_btn").click(function(){
         console.log("done");
@@ -97,7 +99,7 @@
       })
 
       $("#no").click(function(){
-        $(".logout_confirm").fadeOut();
+        $(".logout_confirm").fadeOu+t();
       })
 
       

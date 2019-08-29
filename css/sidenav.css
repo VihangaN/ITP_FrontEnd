@@ -1,12 +1,15 @@
 #side_nav_container{
-    height:80vh;
-    width:50px;
-    background:#ffffff;
+    height:100vh;
+    width:150px;
+    background:#EEEEEE;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     content:'';
-    margin-left:20px;
-    margin-top:45px;
-    border-radius: 40px;
+    margin-left:0px;
+    margin-top: 50px;
+    position:fixed;
+    color:rgb(61, 58, 58);
+    display: block;
+    overflow: scroll;
  
     
 }
@@ -14,39 +17,86 @@
 .side_nav_c {
 display: block;
 font-size:50px;
+display: block;
 }
 
 .side_ul .nav_text{
     margin-left: 30px;
     margin-top: -18px;
     display:none;
+    display: block;
 }
 
 .side_ul{
+    margin-top:25px;
     list-style: none;
-    float:left;
-    padding:20px;
+   
+    text-align: center;
     cursor: pointer;
+    position: relative;
+    display: block;
     
 }
 
 .side_ul i{
     font-size:30px;
     margin-left: -9px;
+    
 }
 
-#expand{
-    height:80vh;
-    width:100px;
-    background:#DDDDDD;
-    content:'';
-    margin-left:20px;
-    margin-top:20px;
-    border-radius: 40px;;
+.side_ul  ul{
+  
+    list-style: none;
+   width:100%;
+    color:black;
+   
+    display: none;
+ }
+
+]
+
+ .side_ul li{
+     position: relative;
+     display: block;
+     text-align: center;
+ }
+
+.side_ul li:hover >  ul{
+visibility:visible;
+display: block;
+transition: 1s;
+
+
+
 }
+
+.nav_ul{
+width:100%;
+}
+
+
+
+
+.nav_ul li:hover{
+    background: "#487EB0";
+}
+
+
+.sub li{
+    width:100%;
+}
+.sub li:hover{
+    background:#487EB0;
+    border-radius: 40px;
+    color:#fff;
+}
+
+
 .side_ul li{
-    
-    margin-top: 30px;
+    display: block;
+  
+    padding-top:20px;
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width:600px){
